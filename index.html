@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Skriptify Creators</title>
+  <meta name="description" content="Learn about the Skriptify Creators program!">
+  <meta property="og:image" content="https://github.com/quick007/skriptify-form/blob/main/Frame%2016.png?raw=true">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+  <div class="flex min-h-screen flex-col bg-gray-900 text-gray-100">
+    <div class="relative h-72 bg-[image:url(https://github.com/quick007/skriptify-form/blob/main/bg.png?raw=true)]">
+      <div class="absolute inset-0 flex flex-col items-center justify-center sm:flex-row">
+        <img src="https://github.com/quick007/skriptify-form/blob/main/bannerTransparent.png?raw=true" alt="" class="h-16 md:h-24" />
+        <h1 class="bg-gradient-to-br from-yellow-500 to-yellow-300 bg-clip-text text-6xl font-bold text-transparent sm:ml-4 sm:-translate-y-2 md:text-7xl">creators</h1>
+      </div>
+    </div>
+    <div class="mx-auto mt-10 flex w-full max-w-2xl flex-col px-4 sm:px-6">
+      <h2 class="text-center text-3xl font-bold">Welcome to the Creators Program</h2>
+      <p class="mx-auto mt-4 text-center">The goal of this is to allow a select group of users to access the website early and help us populate it with avariety of skripts before it's official release. By participating in the Creator Program, you will have the opportunity to share your skripts with the community and gain recognition as one of the first contributors to the platform. In order to onboard users, we've created this simple website with an <a href="#faq" class="text-blue-500 hover:underline">FAQ</a> an an onboarding form. Please fill out this form, then look at the <a href="#faq" class="text-blue-500 hover:underline">FAQ</a> if you have any questions about this program.</p>
+      <form name="creators" method="POST" data-netlify="true" class="mt-10" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+        <p>
+          <label class="flex flex-col text-sm font-medium text-gray-200">Discord ID<input type="text" name="discordid" required class="mt-2 rounded-lg bg-gray-800 placeholder:font-normal placeholder:text-gray-500" placeholder="i.e. 423258218035150849" /></label>
+        </p>
+        <p>
+          <label class="mt-6 flex flex-col text-sm font-medium text-gray-200">Github Profile Link<input type="text" name="github" required class="mt-2 rounded-lg bg-gray-800 placeholder:font-normal placeholder:text-gray-500" placeholder="i.e. https://github.com/quick007" /></label>
+        </p>
+        <p>
+          <label class="mt-6 flex flex-col text-sm font-medium text-gray-200">Email (used for github)<input type="email" name="email" required class="mt-2 rounded-lg bg-gray-800 placeholder:font-normal placeholder:text-gray-500" placeholder="i.e. smalldickenergy@getalife.com" /></label>
+        </p>
+  
+        <p>
+          <label class="mt-6 flex flex-col text-sm font-medium text-gray-200">Some skripts you intend/want to make<textarea name="skript-will-make" required class="mt-2 rounded-lg bg-gray-800 placeholder:font-normal placeholder:text-gray-500"></textarea></label>
+        </p>
+        <p class="hidden">
+          <label> Don’t fill this out if you’re human: <input name="bot-field" /> </label>
+        </p>
+        <div data-netlify-recaptcha="true"></div>
+        <p class="flex">
+          <button type="submit" class="ml-auto mt-8 rounded-lg bg-blue-600 px-6 py-2 font-medium transition hover:bg-blue-700 hover:text-gray-300">Submit!</button>
+        </p>
+      </form>
+      <h2 class="text-center text-3xl font-bold mt-20 relative">FAQ
+        <span class="absolute -top-10" id="faq"></span>
+      </h2>
+      <details class="mt-8 text-gray-200 text-sm border rounded-lg bg-gray-800 border-gray-500 p-3 hover:border-gray-400 transition" >
+        <summary class="cursor-pointer font-medium text-gray-100 text-base">When will I be able to upload skripts?</summary>
+       <p class="mt-2">You will be able to upload skripts once we finish key parts of the website. You will have access to the website in a beta phase, so some features may be broken. We ask that you report any bugs to the staff team.</p> 
+      </details>
+      <details class="mt-4 text-gray-200 text-sm border rounded-lg bg-gray-800 border-gray-500 p-3 hover:border-gray-400 transition" >
+        <summary class="cursor-pointer font-medium text-gray-100 text-base">Will I be able to sell skripts?</summary>
+       <p class="mt-2">We currently have plans to allow users to sell skripts, but that feature will most likely not be present in the initial release.</p> 
+      </details>
+      <details class="mt-4 text-gray-200 text-sm border rounded-lg bg-gray-800 border-gray-500 p-3 hover:border-gray-400 transition" >
+        <summary class="cursor-pointer font-medium text-gray-100 text-base">Can I make money without charging users for skripts?</summary>
+       <p class="mt-2">In the future, we might experiment with some sort of advertising, which you could make money from. This feature will not be present in the initial release.</p> 
+      </details>
+      <details class="mt-4 text-gray-200 text-sm border rounded-lg bg-gray-800 border-gray-500 p-3 hover:border-gray-400 transition" >
+        <summary class="cursor-pointer font-medium text-gray-100 text-base">How will I be able to log in?</summary>
+       <p class="mt-2">All users will be able to log in with GitHub or Discord. As a creator, we highly recommend logging in with GitHub as it will allow you to upload skripts faster, take advantage of possible future features, and use versioning. You may also add your Discord username to your profile.</p>
+      </details>
+      <details class="mt-4 text-gray-200 text-sm border rounded-lg bg-gray-800 border-gray-500 p-3 hover:border-gray-400 transition" >
+        <summary class="cursor-pointer font-medium text-gray-100 text-base">What methods can skripts be uploaded in?</summary>
+       <p class="mt-2">If signed in to GitHub, users will also be able to connect a reposetory or repo. We highly recommend one of these options, as they allow for more flexability. You can also upload files, although you may not have access to all the features compared to a user using the GitHub connection.</p>
+      </details>
+      <div class="flex justify-between mt-20 text-gray-300 text-sm p-3 bg-gray-800 border-gray-500 border rounded-t-lg font-medium">
+        <p>© 2023. All Rights Reserved. </p>
+        <a href="https://rove-website.vercel.app/privacy-policy" class="text-blue-600 hover:underline">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
