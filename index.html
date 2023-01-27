@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,19 +29,21 @@
           <label class="mt-6 flex flex-col text-sm font-medium text-gray-200">Github Profile Link<input type="text" name="github" required class="mt-2 rounded-lg bg-gray-800 placeholder:font-normal placeholder:text-gray-500" placeholder="i.e. https://github.com/quick007" /></label>
         </p>
         <p>
-          <label class="mt-6 flex flex-col text-sm font-medium text-gray-200">Email (used for github)<input type="email" name="email" required class="mt-2 rounded-lg bg-gray-800 placeholder:font-normal placeholder:text-gray-500" placeholder="i.e. smalldickenergy@getalife.com" /></label>
+          <label class="mt-6 flex flex-col text-sm font-medium text-gray-200">Email (used for github)<input type="email" name="email" required class="mt-2 rounded-lg bg-gray-800 placeholder:font-normal placeholder:text-gray-500" placeholder="i.e. name@example.com" /></label>
         </p>
   
         <p>
-          <label class="mt-6 flex flex-col text-sm font-medium text-gray-200">Some skripts you intend/want to make<textarea name="skript-will-make" required class="mt-2 rounded-lg bg-gray-800 placeholder:font-normal placeholder:text-gray-500"></textarea></label>
+          <label class="mt-6 flex flex-col text-sm font-medium text-gray-200">Some skripts you intend/want to make<textarea name="skript-will-make" required class="mt-2 rounded-lg bg-gray-800 placeholder:font-normal placeholder:text-gray-500" placeholder="Please try and think of innovative/interesting skripts. We will not be allowing gens skripts to be posted 30 different times."></textarea></label>
         </p>
         <p class="hidden">
           <label> Don’t fill this out if you’re human: <input name="bot-field" /> </label>
         </p>
-        <div data-netlify-recaptcha="true"></div>
-        <p class="flex">
-          <button type="submit" class="ml-auto mt-8 rounded-lg bg-blue-600 px-6 py-2 font-medium transition hover:bg-blue-700 hover:text-gray-300">Submit!</button>
-        </p>
+        
+        <div class="flex flex-col items-end w-full">
+          <div class="mt-4">
+          <div data-netlify-recaptcha="true"></div></div>
+          <button type="submit" class="mt-8 rounded-lg bg-blue-600 px-6 py-2 font-medium transition hover:bg-blue-700 hover:text-gray-300">Submit!</button>
+        </div>
       </form>
       <h2 class="text-center text-3xl font-bold mt-20 relative">FAQ
         <span class="absolute -top-10" id="faq"></span>
@@ -65,7 +68,7 @@
         <summary class="cursor-pointer font-medium text-gray-100 text-base">What methods can skripts be uploaded in?</summary>
        <p class="mt-2">If signed in to GitHub, users will also be able to connect a reposetory or repo. We highly recommend one of these options, as they allow for more flexability. You can also upload files, although you may not have access to all the features compared to a user using the GitHub connection.</p>
       </details>
-      <div class="flex justify-between mt-20 text-gray-300 text-sm p-3 bg-gray-800 border-gray-500 border rounded-t-lg font-medium">
+      <div class="flex justify-between mt-20 text-gray-400 text-sm p-3 bg-gray-800 border-gray-500 border-l border-t border-r rounded-t-lg font-medium">
         <p>© 2023. All Rights Reserved. </p>
         <a href="https://rove-website.vercel.app/privacy-policy" class="text-blue-600 hover:underline">Privacy Policy</a>
       </div>
